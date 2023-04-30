@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> TuttoVideogiochi </title>
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mhw3.css"/>
+<meta charset="utf-8">
+<script src="mhw3.js" defer="true"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div>
+    <nav>
+        <a href='#'> Home</a>
+        <a href='#'> Lista</a>
+        <a href='#'> Contatti</a>
+        <a href='#'> Login</a>
+    </nav>
+    </div>
+    <header>
+        <div id="overlay"></div>
+        <span id="headertext"> Ricerche sui videogiochi</span>
+    </header>
+    <img src="image/pr.jpg" id="profilo">
+    <strong> Alessandro Aveni</strong>
+    <span id="frase"> Il cuore può essere debole, ma a volte è tutto ciò di cui abbiamo bisogno. (Sora)</span>
+    <div id="linea"></div>
+
+    <article>
+        <section id="listBox">
+            <h3 class="no-margin">Top 30 Giochi più seguiti su Twitch</h3>
+        </section>
+        <div id="searchBox">
+            <h3 class="no-margin">Cerca videogiochi:</h3>
+            <form id="searchForm">
+                <label><input type="text" id="text"></label>
+                <select id="platform">
+                    <option value="PC">PC</option>
+                    <option value="Nintendo Switch">Nintendo Switch</option>
+                    <option value="PlayStation 4">Playstation 4</option>
+                    <option value="PlayStation 5">Playstation 5</option>
+                    <option value="Xbox One">Xbox One</option>
+                    <option value="Xbox Series X|S">Xbox Series X/S</option>
+                    <option value="Android">Android</option>
+                </select>
+                <input type="submit" id="submit" value="Cerca">
+            </form>
+            <div id="answerContainer">
+            </div>
+        </div>
+        
+    </article>
+    <footer>
+        <span>Creato da Alessandro Aveni Matricola: O46002043</span>
+        <span>Corso di Web Programming 2023</span>
+    </footer>
+</body>
+</html>

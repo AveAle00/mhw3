@@ -1,0 +1,196 @@
+body{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    min-height:100vh; /*serve per tenere il footer in basso*/
+}
+nav{
+    background-color: rgba(0,0,0, 0.6);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width:100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+
+}
+a{
+    text-decoration: none;
+    font-family: Serif;
+    color:white;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+a:hover{
+    background-color:white;
+    color:gray;
+}
+@media (max-width: 600px){
+    a{
+        font-size: 17px;
+    }
+}
+
+header{
+    display:flex;
+    height: 350px;
+    width: 100%;
+    background-image: url(image/h.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    z-index: -2;
+    align-items:center;
+    justify-content: center;
+    
+}
+@media (max-width: 600px){
+    header{
+        height: 300px;
+    }
+}
+
+#overlay{
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+}
+
+#headertext{
+    color:white;
+    font-size: 50px;
+    font-family: 'Arvo', serif;
+    width: 780px;
+    text-align: center;
+}
+@media (max-width: 600px){
+    #headertext{
+        font-size: 30px;
+        width:60%;
+    }
+}
+#bottomHeader{
+    flex-direction:column;
+    align-items: center
+}
+#profilo{
+    height:100px;
+    width:100px;
+    border-radius: 100px;
+    border: 3px solid gray;
+    margin-top: -50px;
+}
+strong{
+    font-family:Helvetica;
+   
+}
+#frase{
+    color:rgb(100, 100, 100);
+    font-family: Helvetica;
+    font-style: italic;
+    text-align: center;
+}
+@media (max-width: 600px){
+    #frase{
+        width:60%;
+    }
+}
+#linea{
+    border-bottom: 2px solid lightgray;
+    height: 5px;
+    width: 150px;
+    margin-top: 5px;
+}
+
+article{
+    margin-top: 20px;
+    display: flex;
+    width: 90%;
+    flex-grow:1; /*serve per tenere il footer in basso*/
+    border-left: 2px solid lightgray;
+    border-right: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align:center
+}
+#listBox{
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width:30%;
+}
+
+#searchBox{ 
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    border-left: 2px solid lightgray;
+    width:70%;
+}
+#searchForm{
+    margin-bottom:10px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.no-margin{
+    margin:0px;
+}
+#answerContainer{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.divGame{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:10px;
+    font-weight:bold;
+    max-width:45%;
+    height: 300px;
+    
+}
+.images{
+    max-height: 80%;
+    width: 100%;
+    border-radius: 10px;
+
+}
+#answerContainer div a{
+    margin-top:3px;
+    text-align:center;
+    background-color: rgba(0,0,0,0.6);
+    font-weight:normal;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#answerContainer div a:hover{
+    color:black
+}
+footer{
+    flex-direction:column;
+    align-items:center;
+    margin-top: 20px;
+    background-color:black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:50px;
+    color: white;
+    width:100%;
+    font-family:'Arvo', 'serif';
+}
+@media (max-width: 600px){
+   footer, article, #frase{
+        font-size:14px;
+    }
+}
